@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	 
+	<title>Cleaners R Us.</title>
+	<link rel="Stylesheet" href="Style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+
+<body>
+	<section class="sub-header">
+		<nav>
+			<a href="Index.html"><img src="images/logo.png" alt=""></a>
+			<div class="nav-links" id="navLinks">
+			   <i class="fa fa-times" onclick="hideMenu()"></i>	
+				<ul>
+					<li><a href="Index.html"><b>HOME</b></a></li>
+					<li><a href="Services.html"><b>SERVICES</b></a></li>
+					<li><a href="About.html"><b>ABOUT</b></a></li>
+					<li><a href="Contact Us.html"><b>CONTACT US</b></a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<h1>Our Services</h1>
+	</section>
+	<!-----Services----->
+	<section class="services">
+		<h1>Services We Offer</h1>
+		<p><b>What services are you looking for?</b></p>
+		<div class="row">
+			<div class="services-col">
+				<h3>Maid</h3>
+				<p>
+					Responsible for cleaning the house and specified spaces in the house.
+				</p>
+				
+			</div>
+			
+			<div class="services-col">
+				<h3>Helper</h3>
+				<p>
+					Will assist in any household needs.
+				</p>
+				
+			</div>
+			
+			<div class="services-col">
+				<h3>Caregiver</h3>
+				<p>
+					Responsible for solely taking care of your children.
+				</p>
+				
+			</div>
+			
+			
+			
+			
+		</div>
+	</section>	
+	<!-----Fees----->
+	<section class="fees">
+		<h1>Service Fees</h1>
+		<p><b>How much do our services cost?</b></p>
+		<div class="row">
+			<div class="fees-col">
+				<h3>Maid</h3>
+				<p>1.Live In- R2500 per month.</p>
+				<p>	2.Live Out- R125 per day.</p>
+				
+			</div>
+			<div class="fees-col">
+				<h3>Helper</h3>
+				<p>1.Live In with children- R2500 per month + R250 per child.</p>
+				<p>2.Live Out with children- R125 per day + R250 per child.</p>
+				
+			</div>
+			<div class="fees-col">
+				<h3>Caregiver</h3>
+				<p>1.Live In</p>
+				<p>	2.Live Out.</p>
+				
+			</div>
+			
+			
+		</div>
+		<div class="row">
+			<div class="adds-col">
+				<h3>Add On Services</h3>
+				<p>1.Laundry- R50.</p>
+				<p>2.Ironing- R50.</p>
+				<p>3.Cooking- R25.</p>
+				<p>4.Driving- R25.</p>
+				<p>5.Help with children's homework- R25.</p>
+			</div>
+		</div>
+		
+	<!-----Form----->	
+		<div class="row" >
+			<section class="form">
+		<h1 >Services Required</h1>
+		<p><b>Which services do you require?</b></p>
+		</div>
+	<div class="fcontainer">
+    <div class="title">Please fill in the form.</div>
+    <div class="content">
+      <form action="#" name="servicesreq[]" method="POST" data-netlify="true" onSubmit="submit">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input type="text" name="First Name" placeholder="Enter your first name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Surname</span>
+            <input type="text" name="Surname" placeholder="Enter your surname" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" name="Email" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" name="Phone Number" placeholder="Enter your number" required>
+          </div>
+		  
+		  <div class="input-box">
+            <span class="details">Home Address</span>
+            <input type="text" name="Home Address" placeholder="Enter your home address" required>
+          </div>
+		  
+	
+		 
+		 <div class="custom-select" style="width:200px;">
+  <select name=servicesr[] required="">
+    <option value="0" >Please Select One:</option>
+    <option value="Maid">Maid</option>
+    <option value="Helper">Helper</option>
+    <option value="Caregiver">Caregiver</option>
+    
+  </select>
+  </div>
+		
+		<div class="custom-select" style="width:200px;">
+  <select name=living[] required="">
+    <option value="0" required>Please Select One:</option>
+    <option value="Live-in">Live-in</option>
+    <option value="Live-in with children">Live-in with children</option>
+    <option value="Live-out">Live-out</option>
+	<option value="Live-out with children">Live-out with children</option>
+	
+    
+  </select>
+  </div>
+  
+	<div class="container1" >
+	<h4>Please Select All That Applies:</h4>
+	
+	<input  type=checkbox name=Laundry[] value=yes  />Laundry.</br>
+	<input  type=checkbox name=Ironing[] value=yes  />Ironing.</br>
+	<input  type=checkbox name=Cooking[] value=yes  />Cooking.</br>
+	<input  type=checkbox name=Driving[] value=yes  />Driving.</br>
+	<input  type=checkbox name=Homework[] value=yes  />Children's Homework.</br>
+	
+	</div>
+	
+		
+		
+		
+		
+		 
+		<!--<div class="tacbox">
+			<input type="checkbox" />
+			I agree to these <a href="#" Terms And Conditions</a>.
+		</div>-->
+		<div class="tacbox">
+			<input id="checkbox" type=checkbox name=TermsAndConditionsAgreement[] value=yes/>
+			<label for="checkbox"> I agree to these <a href="Terms And Conditions.html" required> Terms And Conditions</a>.</label>
+			</div>
+		
+		
+		
+		
+        
+        <div class="button">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+		
+		
+		</div>
+		
+		
+	</section>
+	<p></p>
+
+		
+	<!----Footer---->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+			
+				<div class="footer-col"><img src="images/logo.png">
+			
+				</div>
+				<div class="footer-col">
+					<h4>SERVICES</h4>
+					<ul>
+						<li><a href='Services.html'>Maid</a></li>
+						<li><a href='Services.html'>Helper</a></li>
+						<li><a href='Services.html'>Caregiver</a></li>
+					</ul>
+				</div>
+				
+				<div class="footer-col">
+					<h4>LEGAL</h4>
+					<ul>
+						<li><a href='Privacy Policy.html'>Privacy Policy</a></li>
+						<li><a href='Terms And Conditions.html'>Terms And Conditions</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+		<center><p>South Africa, Pretoria. Copyright © Mahlatse S. 2023.All Rights Reserved.</p></center>
+	</footer>	
+		
+	
+	
+	<!----Javascript for toggle menu---->
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		function showMenu(){
+			navLinks.style.right ="0"; 
+		}
+		function hideMenu(){
+			navLinks.style.right ="-200px"; 
+		}
+	</script>
+	
+	
+	
+	
+</body>
+
+</html>
